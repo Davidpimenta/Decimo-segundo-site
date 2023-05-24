@@ -2,9 +2,20 @@ var texto_afazer = document.getElementById('lista')
 var adicionar = document.getElementById('criar_afazer')
 var limpar = document.getElementById('limpar')
 var main = document.getElementById('main')
-adicionar.addEventListener('click', add)
+var alerta = document.getElementById('alerta')
+var clean = []
 var cont = 0
-
+var apg = document.getElementById('clear')
+var fechar = document.getElementById('fechar')
+var modoclaro = document.getElementById('cor')
+modoclaro.addEventListener('click', claro)
+var img = document.getElementById('img')
+adicionar.addEventListener('click', add)
+limpar.addEventListener('click' , divclear)
+fechar.addEventListener('click', divfecha)
+apg.addEventListener('click', clear)
+var troca_cor = false
+var css = document.querySelector('link')
 function add(){
     cont+=1
     var afazer = document.createElement('div')
@@ -65,11 +76,46 @@ function add(){
     afazer.appendChild(numerador)
     afazer.appendChild(lista_afazer)
     afazer.appendChild(check)
-    afazer.id = 'div'
+    afazer.id = 'tarefa'
     lista_afazer.textContent = `${texto_afazer.value}`
     main.appendChild(afazer)
+    clean.push(afazer)
 }
 
 function troca(){
+    
+}
 
+function divclear(){
+    alerta.style.display = 'inline-block'
+    alerta.style.transitionDuration = '1s'
+}
+
+function divfecha(){
+    alerta.style.display = 'none'
+    alerta.style.transitionDuration = '1s'
+}
+
+function clear(){
+    var contb = 0
+    cont = 0
+    while(clean.length > contb){
+        clean[contb].remove()
+    contb++
+    }
+    alerta.style.display = 'none'
+}
+
+
+function claro(){
+    if(troca_cor == false){
+        img.src = 'toggle_on_FILL0_wght400_GRAD0_opsz48.png'
+        troca_cor = true
+        css.href = 'style2.css'
+
+    } else {
+        img.src = 'toggle_off_FILL0_wght400_GRAD0_opsz48.png'
+        troca_cor = false   
+        css.href = 'style.css'
+    }
 }

@@ -19,10 +19,16 @@
     padding: 0%;
 }
 
-body{
+#body1{
+    position: relative;
     height: 100vh;
     font-family: var(--font);
     background-image: linear-gradient(to bottom left, var(--cor1), var(--cor2));
+}
+
+
+main{
+    position: relative;
 }
 
 h1{
@@ -37,6 +43,26 @@ h1{
     justify-content: right;
     width: 100%;
     height: 50px;
+}
+
+#troca > p{
+    line-height: 50px;
+    margin-right: 5px;
+    font-family: var(--font1);
+    font-size: 1.2em;
+    color: var(--cor0);
+    font-weight: bolder;
+}
+
+#cor{
+    background-color: var(--cor1);
+    border: 2px solid var(--cor4);
+}
+
+#cor:hover{
+    background-color: var(--cor0);
+    transition-duration: 1s;
+    cursor: pointer;
 }
 
 
@@ -110,7 +136,7 @@ h1{
     transition-duration: 0.5s;
 }
 
-#div{
+#tarefa{
     display: grid;
     grid-template-columns: 10% 75% 10%;
     margin-top: 15px;
@@ -165,4 +191,56 @@ h1{
     border: 1px solid var(--cor4);
     border-radius: 10px;
 
+}
+
+
+#alerta{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    padding: 20px;
+    background-color: var(--cor2);
+    border: 2px solid var(--cor4);
+    border-radius: 15px;
+}
+
+#texto_alerta{
+    color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+}
+
+#clear{
+    margin-top: 10px;
+    border: 0px;
+    background-color: var(--cor4);
+    width: calc(50% - 10px);
+    padding: 5px;
+    font-size: 1.8em;
+    border: 2px solid var(--cor0);
+    color: var(--cor0);
+}
+
+#clear:hover{
+    color: var(--cor3);
+    cursor: pointer;
+}
+
+#fechar{
+    margin-top: 10px;
+    border: 0px;
+    background-color: var(--cor0);
+    width: calc(50% - 10px);
+    padding: 5px;
+    font-size: 1.8em;
+    border: 2px solid var(--cor4);
+    color: var(--cor4);
+}
+
+#fechar:hover{
+    color: #02050D;
+    cursor: pointer;
 }

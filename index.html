@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Lista de afazeres</title>
 </head>
-<body>
+<body id="body1">
     <header>
         <h1>Bem vindo a sua Lista de afazeres!</h1>
         <div id="troca">
-            <button id="cor">Trocar</button>
+            <p>Modo Claro:</p>
+            <button id="cor"><img src="toggle_off_FILL0_wght400_GRAD0_opsz48.png" alt="" id="img"></button>
         </div>
     </header>
     <main id="main">
@@ -21,7 +23,13 @@
             <button id="criar_afazer">Adicionar</button>
             <button id="limpar">Limpar</button>
         </div>
+        
     </main>
+    <div id="alerta">
+        <p id="texto_alerta">Tem certeza que quer apagar TODAS as tarefas em sua lista?</p>   
+        <button id="clear">Apagar</button>
+        <button id="fechar">Fechar</button>     
+    </div>
     <script src='js.js'></script>
 </body>
 </html>
