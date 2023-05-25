@@ -255,3 +255,19 @@ h1{
     color: #02050D;
     cursor: pointer;
 }
+
+
+#aviso{
+    margin-top: 10px;
+    padding: 15px;
+    background-color: var(--cor0);
+    border: 2px solid var(--cor4);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#aviso > p{
+    font-family: var(--font1);
+    font-size: 1.2em;
+    font-weight: bolder;
+}

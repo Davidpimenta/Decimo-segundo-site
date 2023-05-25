@@ -61,6 +61,10 @@
     #apagar{
         width: 150px;
     }
+
+    #aviso > p{
+        font-size: 1.5em;
+    }
 }
 
 
@@ -121,9 +125,14 @@
     #check{
         background-size: 80% 100%;
     }
+
+    #aviso > p{
+        font-size: 1.8em;
+    }
 }
 
 @media screen and (min-width: 1201px){
+
     #cria_lista{
         width: 80%;
         margin: auto;
@@ -181,10 +190,13 @@
         background-size: 50% 150%;
     }
 
-    #tarefa{
-
+    #apagar{
+        width: 180px;
     }
-
+    
+    #aviso > p{
+        font-size: 1.8em;
+    }
 
 }
 

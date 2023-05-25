@@ -17,6 +17,7 @@ apg.addEventListener('click', clear)
 var aviso = false
 var troca_cor = false
 var css = document.querySelector('link')
+var verapg = false
 function add(){
     if(aviso == false){
         cont+=1
@@ -55,13 +56,14 @@ function add(){
 
         
         numerador.addEventListener('click', function apagar(){
-            apaga.style.display = 'inline-block'
+            if(verapg == false){
+                apaga.style.display = 'inline-block'
+                verapg = true
+            } else {
+                apaga.style.display = 'none'
+                verapg = false
+            }
         })
-
-        apaga.addEventListener('mouseout', function apagarout(){
-            apaga.style.display = 'none'
-        })
-
 
         apaga.addEventListener('click', function deletar(){
             afazer.remove()
@@ -85,9 +87,6 @@ function add(){
     } 
 }
 
-function troca(){
-    
-}
 
 function divclear(){
     alerta.style.display = 'inline-block'
