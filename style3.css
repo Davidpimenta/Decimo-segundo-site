@@ -129,6 +129,11 @@
     #aviso > p{
         font-size: 1.8em;
     }
+
+    #apagar{
+        width: 150px;
+    }
+
 }
 
 @media screen and (min-width: 1201px){
