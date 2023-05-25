@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+
+@media screen and (max-width: 768px) and (min-width: 600px) and (max-height: 500px){
+    #cria_lista{
+        width: 75%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #tarefa{
+        width: 75%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    #troca > p{
+        font-size: 1.5em;
+    }
+
+    #cria_lista h1{
+        font-size: 2em;
+    }
+    
+    #criar_afazer{
+        font-size: 1.5em;
+    }
+
+    #limpar{
+        font-size: 1.5em;
+    }
+
+    #paragrafochek{
+        font-size: 1.8em;
+    }
+
+    #apagar{
+        font-size: 1em;
+    }
+
+    #texto_alerta{
+        font-size: 2em;
+    }
+
+    #clear{
+        font-size: 2em;
+    }
+
+    #fechar{
+        font-size: 2em;
+    }
+
+    #check{
+        background-size: 80% 100%;
+    }
+
+    #apagar{
+        width: 150px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    #cria_lista{
+        width: 75%;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+    #tarefa{
+        width: 75%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    #troca > p{
+        font-size: 1.5em;
+    }
+
+    #cria_lista h1{
+        font-size: 2em;
+    }
+    
+    #criar_afazer{
+        font-size: 1.5em;
+    }
+
+    #limpar{
+        font-size: 1.5em;
+    }
+
+    #paragrafochek{
+        font-size: 1.8em;
+    }
+
+    #apagar{
+        font-size: 1em;
+    }
+
+    #texto_alerta{
+        font-size: 2em;
+    }
+
+    #clear{
+        font-size: 2em;
+    }
+
+    #fechar{
+        font-size: 2em;
+    }
+
+    #check{
+        background-size: 80% 100%;
+    }
+}
+
+@media screen and (min-width: 1201px){
+    #cria_lista{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+    #tarefa{
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    #troca > p{
+        font-size: 2em;
+    }
+
+    #cria_lista h1{
+        font-size: 3em;
+    }
+    
+    #criar_afazer{
+        font-size: 1.8em;
+    }
+
+    #limpar{
+        font-size: 1.8em;
+    }
+
+    #paragrafochek{
+        font-size: 1.8em;
+    }
+
+    #apagar{
+        font-size: 1.2em;
+    }
+
+    #texto_alerta{
+        font-size: 2.5em;
+    }
+
+    #clear{
+        font-size: 2.5em;
+    }
+
+    #fechar{
+        font-size: 2.5em;
+    }
+
+    #check{
+        background-size: 50% 150%;
+    }
+
+    #tarefa{
+
+    }
+
+
+}
+

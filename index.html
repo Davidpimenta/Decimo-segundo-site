@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
     
     <title>Lista de afazeres</title>
 </head>
-<body id="body1">
+<body>
     <header>
         <h1>Bem vindo a sua Lista de afazeres!</h1>
         <div id="troca">
@@ -22,14 +23,16 @@
             <input type="text" name="lista" id="lista" placeholder="Estudar matemática">
             <button id="criar_afazer">Adicionar</button>
             <button id="limpar">Limpar</button>
+            <div id="alerta">
+                <p id="texto_alerta">Tem certeza que quer apagar TODAS as tarefas em sua lista?</p>   
+                <button id="clear">Apagar</button>
+                <button id="fechar">Fechar</button>     
+            </div>
         </div>
         
     </main>
-    <div id="alerta">
-        <p id="texto_alerta">Tem certeza que quer apagar TODAS as tarefas em sua lista?</p>   
-        <button id="clear">Apagar</button>
-        <button id="fechar">Fechar</button>     
-    </div>
+    
+
     <script src='js.js'></script>
 </body>
 </html>
