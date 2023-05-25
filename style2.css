@@ -27,8 +27,12 @@ body{
     background-image: linear-gradient(to bottom left, var(--cor2), var(--cor4));
 }
 
+main{
+    position: relative;
+}
+
 h1{
-    margin: 15px;
+    margin-top: 15px;
     text-align: center;
     font-size: 1.8em;
     color: var(--cor0);
@@ -38,4 +42,210 @@ h1{
     display: flex;
     justify-content: right;
     width: 100%;
+    height: 50px;
 }
+
+#troca > p{
+    line-height: 50px;
+    margin-right: 5px;
+    font-family: var(--font1);
+    font-size: 1.2em;
+    color: var(--cor0);
+    font-weight: bolder;
+}
+
+#cor{
+    background-color: var(--cor3);
+    border: 2px solid var(--cor4);
+}
+
+#cor:hover{
+    background-color: var(--cor0);
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+#cria_lista{
+    padding: 10px;
+    padding-bottom: 35px;
+    margin-top: 10px;
+    background-color: var(--cor3);
+    border: 2px solid var(--cor1);
+}
+
+#cria_lista h1{
+    font-family: var(--font1);
+    font-size: 1.8em;
+    font-weight: bolder;
+    margin: 0%;
+}
+
+#lista{
+    margin-top: 10px;
+    border: 4px solid var(--cor4);
+    width: 100%;
+    padding: 10px;
+    text-indent: 5px;
+    font-size: 1.2em;
+    border-radius: 15px;
+    background-color: var(--cor0);
+    color: var(--cor4);
+    box-sizing: border-box;
+}
+
+
+#lista:focus{
+    box-sizing: 0 0 0 0;
+    outline: 0;
+}
+
+#criar_afazer{
+    border: 2px solid var(--cor4);
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    text-indent: 5px;
+    font-size: 1.2em;
+    border-radius: 15px;
+    background-color: var(--cor0);
+    color: var(--cor4);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#limpar{
+    border: 1px solid var(--cor4);
+    width: calc(50% - 10px);
+    padding: 10px;
+    text-indent: 5px;
+    font-size: 1.2em;
+    border-radius: 15px;
+    background-color: var(--cor0);
+    color: var(--cor4);
+    cursor: pointer;
+}
+
+#criar_afazer:active{
+    background-color: var(--cor2);
+    color: var(--cor0);
+    transition-duration: 0.5s;
+}
+
+#limpar:active{
+    background-color: var(--cor2);
+    color: var(--cor0);
+    transition-duration: 0.5s;
+}
+
+#tarefa{
+    display: grid;
+    grid-template-columns: 10% 75% 10%;
+    margin-top: 15px;
+    padding: 15px;
+    width: calc(100% - 34px);
+    background-color: var(--cor3);
+    border: 2px solid var(--cor1);
+}
+
+#contador{
+    line-height: 29px;
+    text-align: center;
+    justify-self: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--cor0);
+    border: 2px solid var(--cor4);
+    cursor: pointer;
+}
+
+#paragrafochek{
+    margin-left: 5px;
+    background-color: var(--cor0);
+    line-height: 29px;
+    border-radius: 10px;
+    text-indent: 10px;
+    font-family: var(--font1);
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: var(--cor4);
+    border: 2px solid var(--cor4);
+}
+
+#check{
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--cor0);
+    margin-left: 10px;
+    border: 2px solid var(--cor4);
+    cursor: pointer;
+}
+
+#apagar{
+    display: none;
+    margin-top: 5px;
+    background-color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: var(--cor4);
+    font-size: 0.8em;
+    width: 100px;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#alerta{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    padding: 20px;
+    background-color: var(--cor2);
+    border: 2px solid var(--cor1);
+    border-radius: 15px;
+}
+
+#texto_alerta{
+    color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+}
+
+#clear{
+    margin-top: 10px;
+    border: 0px;
+    background-color: var(--cor4);
+    width: calc(50% - 10px);
+    padding: 5px;
+    font-size: 1.8em;
+    border: 2px solid var(--cor0);
+    color: var(--cor0);
+}
+
+#clear:hover{
+    color: var(--cor1);
+    cursor: pointer;
+}
+
+#fechar{
+    margin-top: 10px;
+    border: 0px;
+    background-color: var(--cor0);
+    width: calc(50% - 10px);
+    padding: 5px;
+    font-size: 1.8em;
+    border: 2px solid var(--cor4);
+    color: var(--cor4);
+}
+
+#fechar:hover{
+    color: black;
+    cursor: pointer;
+}
+
+

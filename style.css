@@ -110,6 +110,7 @@ h1{
     background-color: var(--cor0);
     color: var(--cor3);
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 #limpar{
@@ -122,6 +123,7 @@ h1{
     background-color: var(--cor0);
     color: var(--cor3);
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 #criar_afazer:active{
@@ -155,6 +157,7 @@ h1{
     border-radius: 50%;
     background-color: var(--cor0);
     border: 2px solid var(--cor4);
+    cursor: pointer;
 }
 
 #paragrafochek{
@@ -167,6 +170,7 @@ h1{
     font-size: 1.5em;
     font-weight: bolder;
     color: #02050D;
+    border: 2px solid var(--cor4);
 }
 
 #check{
@@ -177,6 +181,7 @@ h1{
     background-color: var(--cor0);
     margin-left: 10px;
     border: 2px solid var(--cor4);
+    cursor: pointer;
 }
 
 #apagar{
@@ -190,7 +195,7 @@ h1{
     width: 100px;
     border: 1px solid var(--cor4);
     border-radius: 10px;
-
+    cursor: pointer;
 }
 
 
